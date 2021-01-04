@@ -13,7 +13,7 @@ const useStyles = makeStyles(styles);
 
 const menu = [
   { label: 'Portafolio', href: '/404' },
-  { label: '¿Quiénes somos?', href: '/404' },
+  { label: '¿Quiénes somos?', href: '/aboutUs' },
   { label: 'Blog', href: '/404' },
   { label: 'Contacto', href: '/404' },
 ];
