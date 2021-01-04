@@ -1,12 +1,47 @@
 export const bannerAboutUs = {
-  backgroundImage:
-    'https://res.cloudinary.com/initgrammers/image/upload/v1607008550/LandingPage/figures/bloque1.png',
-  heightImage: 672,
-  title: 'Desarrollo y diseño de software al alcande de tus manos',
-  description:
-    'Descubre el mundo digital, te ayudamos a construir aplicaciones y programas de principio a fin',
-  image:
-    'https://res.cloudinary.com/initgrammers/image/upload/v1607028746/LandingPage/desarrollo-diseno-software.png',
+  backgroundImage: '/assets/images/figures/shopOnline/bloque1.png',
+  heightImage: 660,
+  title: '¿Quiénes somos?',
+  description: 'Conoce un poco sobre InitGrammers',
+  image: '/assets/images/equipo-de-desarrollo.png',
+  buttonColor: 'primary',
+};
+
+const misionTypes = [
+  {
+    path: '/assets/images/redes-sociales.svg',
+    title: 'Misión',
+    description:
+      'Brindar soluciones de alto impacto mediante el uso de la tecnología.',
+  },
+  {
+    path: '/assets/images/medios-digitales.svg',
+    title: 'Visión',
+    description:
+      'Ser un referente de innovación de Latinoamérica que impulse el desarrollo tecnológico del mundo',
+  },
+];
+
+export const optionmisionTypes = {
+  imageSizes: {
+    xs: {
+      width: 288,
+      height: 283,
+    },
+    sm: {
+      width: 414,
+      height: 386,
+    },
+    md: {
+      width: 414,
+      height: 386,
+    },
+    lg: {
+      width: 582,
+      height: 542,
+    },
+  },
+  misionTypes,
 };
 
 export const onlineSolution = {

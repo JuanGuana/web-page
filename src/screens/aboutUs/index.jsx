@@ -7,11 +7,15 @@ import CarryOutThatProject from './sections/CarryOutThatProject';
 import Questions from './sections/Questions';
 import SEO from '#Components/SEO';
 import LandingPage from '#constants/seo/LandingPage';
+import Mision from './sections/Mision';
+
 
 const index = () => (
   <>
     <SEO {...LandingPage} />
     <Banner />
+    <Mision />
+    
     <OnlineSolution />
     <Services />
     <PartnershipModel />

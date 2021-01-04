@@ -1,5 +1,5 @@
 import { useTheme } from '@material-ui/core';
-import AbautUsBanner from '../components/Banner';
+import AbautUsBanner from '#Components/Banner';
 import { bannerAboutUs } from '#constants/aboutUs';
 import { contactsLinks } from '#app/constants/contacts';
 
@@ -10,11 +10,11 @@ const Banner = () => {
     <AbautUsBanner
       backgroundImage={bannerAboutUs.backgroundImage}
       heightImage={bannerAboutUs.heightImage}
-      title={bannerAboutUs.title}
+      titlePart2={bannerAboutUs.title}
       description={bannerAboutUs.description}
       image={bannerAboutUs.image}
-      backgroundColor={palette.primary.fade}
-      hrefContactUs={contactsLinks.seoPage}
+      backgroundColor={palette.secondary.gray}
+      hrefContactUs={contactsLinks.general}
       buttonColor={bannerAboutUs.buttonColor}
     />
   );
