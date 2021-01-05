@@ -44,6 +44,69 @@ export const optionmisionTypes = {
   misionTypes,
 };
 
+const members = [
+  {
+    path: '/assets/images/henry-villavicencio.png',
+    name: 'Henry Villavicencio',
+    position: 'CEO y Fundador',
+    linkedin: 'https://www.linkedin.com/in/henry-villavicencio-catota-a7b76516b/',
+  },
+  {
+    path: '/assets/images/andrea-jurado.png',
+    name: 'Andrea Jurado',
+    position: 'Marketing',
+    linkedin: 'https://www.linkedin.com/in/andreajurado-n/',
+  },
+  {
+    path: '/assets/images/oscar-espana.png',
+    name: 'Oscar España',
+    position: 'Diseñador UI/UX',
+    linkedin: 'https://www.linkedin.com/in/oscar-espa%C3%B1a-56aa77172/',
+  },
+  {
+    path: '/assets/images/cristian-ronda.png',
+    name: 'Cristian Ronda',
+    position: 'Líder de desarrollo',
+    linkedin: 'https://www.linkedin.com/in/cristian-ronda-169414180/',
+  },
+  {
+    path: '/assets/images/julio-gonzalez.png',
+    name: 'Julio Gonzalez',
+    position: 'Desarrollador Backend',
+    linkedin: 'https://www.linkedin.com/in/julio-gonz%C3%A1lez-8a64a3199/',
+  },
+  {
+    path: '/assets/images/juan-carlos-guana.png',
+    name: 'Juan Carlos Guaña',
+    position: 'Desarrollador Frontend',
+    linkedin: 'https://www.linkedin.com/in/juan-carlos-guana/',
+  },
+];
+
+export const optionTeam = {
+  title: 'Equipo de trabajo',
+  backgroundImage: '/assets/images/figures/digitalMarketing/bloque3.png',
+  heightImage: 1246,
+  imageSizes: {
+    xs: {
+      width: 288,
+      height: 241,
+    },
+    sm: {
+      width: 264,
+      height: 241,
+    },
+    md: {
+      width: 264,
+      height: 241,
+    },
+    lg: {
+      width: 320,
+      height: 241,
+    },
+  },
+  members,
+};
 
 
 
