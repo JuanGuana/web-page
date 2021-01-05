@@ -2,84 +2,35 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core';
 
 const styles = makeStyles((theme) => ({
-  background: {
-    background: 'rgba(163, 18, 91, 0.04)',
-  },
-  content: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
-  },
+  card: {
+    borderRadius: '20px',
+    padding: theme.spacing(3, 2),
+    margin: theme.spacing(4, 2),
 
-  title: {
-    paddingBottom: theme.spacing(4),
-    textAlign: 'center',
-    '& span': {
-      color: theme.palette.primary.light,
-    },
-  },
-  description: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
-    textAlign: 'center',
-  },
-
-  shop: {
-    marginTop: theme.spacing(4),
-  },
-  optionsShop: {
-    '&:nth-child(1n)': {
-      marginBottom: theme.spacing(4),
+    '&:first-child': {
+      background: theme.palette.primary.fade,
     },
     '&:last-child': {
-      marginBottom: 0,
+      background: theme.palette.secondary.fade,
     },
   },
   [theme.breakpoints.up('sm')]: {
-    imageStyle: ({ sm }) => ({
-      width: sm.width,
-      height: sm.height,
-      position: 'relative',
-    }),
-    content: {
-      paddingTop: theme.spacing(5),
-      paddingBottom: theme.spacing(5),
+    section: {
+      display: 'flex',
+      justifyContent: 'center',
     },
-  },
-  [theme.breakpoints.up('md')]: {
-    imageStyle: ({ md }) => ({
-      width: md.width,
-      height: md.height,
-      position: 'relative',
-    }),
+    card: {
+      width: '320px',
+      height: '264px',
+    },
   },
   [theme.breakpoints.up('lg')]: {
-    imageStyle: ({ lg }) => ({
-      width: lg.width,
-      height: lg.height,
-      position: 'relative',
-    }),
-    content: {
-      paddingTop: theme.spacing(8),
-      paddingBottom: theme.spacing(8),
+    section: {
+      margin: theme.spacing(8, 26),
     },
-    shop: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'space-between',
-    },
-    optionsShop: {
-      width: '320px',
-      paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2),
-      '&:nth-child(3)': {
-        marginBottom: 0,
-      },
-      '&:last-child': {
-        marginBottom: 0,
-      },
+    card: {
+      width: '496px',
+      height: '260px',
     },
   },
 }));

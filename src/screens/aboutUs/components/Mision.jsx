@@ -1,30 +1,25 @@
 import { Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import styles from '../styles/Mision';
-import CustomContainer from '#Components/CustomContainer';
-import CardPartnership from '#Components/CardPartnership';
+import Card from '#Components/CardObjectives';
 
 const Mision = ({
   imageSizes,
-  optionsShoppingOnline,
+  options,
 }) => {
   const classes = styles({ ...imageSizes });
 
   return (
-    <Box component="section" position="relative">
-      <CustomContainer>
-        <Box className={classes.shop}>
-          {optionsShoppingOnline.map((service) => (
-            <Box key={service.title} className={classes.optionsShop}>
-              <CardPartnership
-                image={service.path}
-                title={service.title}
-                description={service.description}
-              />
-            </Box>
-          ))}
+    <Box component="section" position="relative" className={classes.section}>
+      {options.map((option) => (
+        <Box key={option.title} className={classes.card}>
+          <Card
+            image={option.path}
+            title={option.title}
+            description={option.description}
+          />
         </Box>
-      </CustomContainer>
+      ))}
     </Box>
   );
 };
@@ -48,7 +43,7 @@ Mision.propTypes = {
       height: PropTypes.number,
     }),
   }).isRequired,
-  optionsShoppingOnline: PropTypes.arrayOf(
+  options: PropTypes.arrayOf(
     PropTypes.shape({
       path: PropTypes.string,
       title: PropTypes.string,
@@ -57,10 +52,4 @@ Mision.propTypes = {
   ).isRequired,
 };
 
-Mision.defaultProps = {
-  backgroundImage: '',
-  heightImage: 0,
-  titlePart2: '',
-  titlePart3: '',
-};
 export default Mision;

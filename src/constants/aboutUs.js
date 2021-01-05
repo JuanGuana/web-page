@@ -9,13 +9,13 @@ export const bannerAboutUs = {
 
 const misionTypes = [
   {
-    path: '/assets/images/redes-sociales.svg',
+    path: '/assets/images/mision.svg',
     title: 'Misión',
     description:
       'Brindar soluciones de alto impacto mediante el uso de la tecnología.',
   },
   {
-    path: '/assets/images/medios-digitales.svg',
+    path: '/assets/images/vision.svg',
     title: 'Visión',
     description:
       'Ser un referente de innovación de Latinoamérica que impulse el desarrollo tecnológico del mundo',
@@ -43,6 +43,25 @@ export const optionmisionTypes = {
   },
   misionTypes,
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const onlineSolution = {
   backgroundImage:
