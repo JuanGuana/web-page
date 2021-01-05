@@ -6,6 +6,7 @@ const styles = (theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     borderRadius: '20px',
+    background: 'white',
     boxShadow: '4px 4px 8px rgba(133, 135, 137, 0.3)',
     marginBottom: theme.spacing(3),
     width: xs.width,
