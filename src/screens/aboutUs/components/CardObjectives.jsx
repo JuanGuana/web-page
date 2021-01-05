@@ -1,6 +1,6 @@
 import { Box, Typography, makeStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import styles from '../assets/styles/CardObjectives';
+import styles from '../styles/CardObjectives';
 
 const useStyles = makeStyles(styles);
 

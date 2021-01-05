@@ -1,7 +1,7 @@
 import { Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import styles from '../styles/Culture';
-import Card from '#Components/CardObjectives';
+import Card from './CardObjectives';
 import Subtitle from '#Components/Subtitle';
 import BackgroundImage from '#Components/BackgroundImage';
 import CustomContainer from '#Components/CustomContainer';

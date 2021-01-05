@@ -1,7 +1,7 @@
 import { Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import styles from '../styles/Mision';
-import Card from '#Components/CardObjectives';
+import Card from './CardObjectives';
 
 const Mision = ({
   imageSizes,
