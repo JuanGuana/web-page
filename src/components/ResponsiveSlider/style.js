@@ -22,6 +22,9 @@ const styles = makeStyles((theme) => ({
     justifyContent: 'center',
     position: 'relative',
     height: `${imageIsLarge ? '41px' : '134px'}`,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '0.8rem',
+    },
   }),
   image: {
     objectFit: 'cover',
